@@ -1,0 +1,7 @@
+Application: 'app' '{' entities += Entity '}';
+
+Entity: name=ID '{' fields += Field '}';
+
+Field: name=ID ':' type=Type ';';
+
+Type: 'int' | 'string' | 'bool';

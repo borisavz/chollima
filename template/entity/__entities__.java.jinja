@@ -1,0 +1,12 @@
+@Getter
+@Setter
+class {{ obj.name }} {
+
+    @Id
+    @GeneratedValue
+    private long id;
+
+{% for f in obj.fields %}
+    private {{ 'int' if f.type == 'int' else ''}}{{ 'boolean' if f.type == 'bool' else ''}}{{ 'String' if f.type == 'string' else ''}} {{ f.name }};
+{% endfor %}
+}

@@ -1,0 +1,13 @@
+app {
+    User {
+        name: string;
+        job: string;
+        yearOfBirth: int;
+    }
+
+    Car {
+        manufacturer: string;
+        model: string;
+        hasSeatbelt: bool;
+    }
+}
